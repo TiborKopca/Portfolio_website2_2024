@@ -26,14 +26,18 @@
 
     <link rel="manifest" href="site.webmanifest" />
 
+    <!-- FAVICONS -->
     <link rel="icon" type="image/png" href="favicon.ico" />
     <link rel="apple-touch-icon" href="icon.png" />
 
+    <!-- ICONS -->
     <link
       rel="stylesheet"
       href="font/fontawesome-free-6.1.2-web/css/all.min.css"
     />
-
+    <!-- FONTS LOADED IN STYLE.CSS-->
+    <!-- <link rel="stylesheet" type="text/css" href="font/poppins/poppins.css"> -->
+    <!-- STYLESHEET -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <script></script>
@@ -41,29 +45,30 @@
   </head>
 
   <body>
-    <!-- Layout principal  -->
+    <!-- Main layout/Layout principal  -->
     <div class="layout">
-      <!-- Barra lateral (info usuario)  -->
+      <!-- Sidebar/Barra lateral (info user)  -->
       <aside class="layout__aside">
         <section class="aside__user-info">
           <div class="user-info__general">
+            <!-- image mask -->
             <div class="user-info__container-image">
               <img
                 src="img/desktop/default-user.jpg"
                 class="user-info__image"
-                alt="Foto de perfil del usuario"
+                alt="Foto of Tibor Kopca"
               />
             </div>
 
             <h2 class="user-info__name">Tibor Kopca</h2>
             <h4 class="user-info__job">Web Developer | Desarrollador web</h4>
           </div>
-
+          <!-- Sidebar menu - outside the layout really -->
           <nav class="layout__menu">
             <ul class="menu__list">
               <li class="menu__option">
                 <a href="index.html" class="menu__link">
-                  <i class="menu__icon fa-solid fa-house"></i>
+                  <i class="menu__icon fa-solid fa-house fa-beat-fade"></i>
                   <span class="menu__overlay">Home</span>
                 </a>
               </li>
@@ -105,11 +110,12 @@
             </ul>
           </nav>
 
+          <!-- SOCIAL NETWORKS -->
           <div class="user-info__links">
             <ul class="links__social">
               <li class="social__option">
                 <a href="#" class="social__link">
-                  <i class="social__icon fa-brands fa-youtube"></i>
+                  <i class="social__icon fa-brands fa-github"></i>
                 </a>
               </li>
 
@@ -122,6 +128,12 @@
               <li class="social__option">
                 <a href="#" class="social__link">
                   <i class="social__icon fa-brands fa-instagram"></i>
+                </a>
+              </li>
+
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-facebook"></i>
                 </a>
               </li>
             </ul>
@@ -137,7 +149,7 @@
         </section>
       </aside>
 
-      <!-- Contenido principal  -->
+      <!-- Main content/Contenido principal  -->
       <main class="layout__content">
         <section class="content__page">
           <h1 class="page__name">Tibor Kopca</h1>
