@@ -24,7 +24,9 @@
   --color-subtitle: #888;
   --color-text: #555;
 
-
+  --color-semi-transparent-25: rgba(205 205 205 / 25%);
+  /* --color-semi-transparent-50: rgba(205 205 205 / 50%); */
+  --color-semi-transparent-50: rgba(167, 194, 194, 0.5);--color-semi-transparent-75: rgba(167, 194, 194, 0.75);
 }
 /* TEXT SELECTION ************************************** */
 ::selection{
@@ -73,7 +75,7 @@ body{
   grid-template-areas: "aside content";
   grid-template-columns: 30% 70%;
 
-  background: rgba(205 205 205 / 25%);
+  background: var(--color-semi-transparent-25);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 
@@ -215,6 +217,7 @@ body{
 
 .content__page{
   background-color: var(--color-background);
+  height: 100%;
   min-height: 100%;
   border-radius: 3.2rem;
 
@@ -289,12 +292,28 @@ body{
   opacity: 0;
   padding: 0.5rem 1rem;
   display: block;
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+  /* color: var(--color-primary); */
+  /* background-color: var(--color-secondary); */
+  color: var(--color-title);
+  background: var(--color-semi-transparent-50);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.493);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   white-space: nowrap;
   border-radius: 6px;
 
   transition: all 0.3s ease-in-out;
+}
+/* TOOLTIP TRIANGLE ARROW RIGHT******************************************** */
+.menu__overlay::after{
+  content: " ";
+  position: absolute;
+  top: 5px;
+  right: -20px;
+  margin-right: 1px;
+  border-width: 10px;
+  border-style: solid;
+  border-color:  transparent transparent transparent var(--color-semi-transparent-50);
 }
 
 .menu__option:hover .menu__overlay{
@@ -303,5 +322,18 @@ right: 100%;
 transition: all 0.3s ease-in-out;
 }
 
+/* ABOUT ME PAGE******************************************** */
+.content__about{
+  display: block;
+  height: 100%;
+  min-height: 100%;
 
- 
+  overflow: auto;
+  padding: 6rem;
+  padding-right: 3rem;
+  background-color: var(--color-background);
+  border-radius: 3.2rem;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
