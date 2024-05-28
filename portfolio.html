@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - About me | Tibor Kopca</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <meta property="og:title" content="Portfolio | Tibor Kopca" />
+    <meta property="og:description" content="A portfolio website" />
+    <meta
+      property="og:image"
+      content="URL de la imagen que quieres mostrar en las redes sociales"
+    />
+    <meta property="og:url" content="URL de tu página" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Título de tu página" />
+    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta
+      name="twitter:image"
+      content="URL de la imagen que quieres mostrar en Twitter"
+    />
+    <meta name="theme-color" content="#fafafa" />
+
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- FAVICONS -->
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="font/fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <!-- FONTS LOADED IN STYLE.CSS-->
+    <!-- <link rel="stylesheet" type="text/css" href="font/poppins/poppins.css"> -->
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/scroll.css" />
+    <script></script>
+    <!-- <script src="preloader.js"></script> -->
+  </head>
+
+  <body>
+    <!-- Main layout/Layout principal  -->
+    <div class="layout">
+      <!-- Sidebar/Barra lateral (info user)  -->
+      <aside class="layout__aside">
+        <section class="aside__user-info">
+          <div class="user-info__general">
+            <!-- image mask -->
+            <div class="user-info__container-image">
+              <img
+                src="img/desktop/default-user.jpg"
+                class="user-info__image"
+                alt="Foto of Tibor Kopca"
+              />
+            </div>
+
+            <h2 class="user-info__name">Tibor Kopca</h2>
+            <h3 class="user-info__job">Web Developer | Desarrollador web</h3>
+          </div>
+          <!-- Sidebar menu - outside the layout really -->
+          <nav class="layout__menu">
+            <ul class="menu__list">
+              <li class="menu__option">
+                <a href="index.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-house"></i>
+                  <span class="menu__overlay">Home</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="about.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-user"></i>
+                  <span class="menu__overlay">About me</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="curriculum.html" class="menu__link">
+                  <i
+                    class="menu__icon fa-solid fa-graduation-cap"
+                  ></i>
+                  <span class="menu__overlay">Curriculum</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="portfolio.html" class="menu__link menu__link--active">
+                  <i class="menu__icon fa-solid fa-briefcase fa-beat-fade"></i>
+                  <span class="menu__overlay">Portfolio</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="blog.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-book"></i>
+                  <span class="menu__overlay">Blog</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="contact.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-envelope"></i>
+                  <span class="menu__overlay">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- SOCIAL NETWORKS -->
+          <div class="user-info__links">
+            <ul class="links__social">
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-github"></i>
+                </a>
+              </li>
+
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-instagram"></i>
+                </a>
+              </li>
+
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- CV BUTTON -->
+          <div class="user-info__buttons">
+            <a href="#" class="user-info__btn">Download CV</a>
+          </div>
+
+          <footer class="user-info__footer">TK Development &copy; 2024</footer>
+        </section>
+      </aside>
+
+      <!-- Main content/Contenido principal  -->
+      <main class="layout__content">
+        <section class="content__page content__resume">
+          <header class="resume__header">
+            <h1 class="resume__title">Curriculum</h1>
+          </header>
+          <div class="resume__container">
+            <section class="resume__left">
+              <div class="resume__subheader">
+                <h2 class="resume__subtitle">Studies</h2>
+              </div>
+              <div class="resume__timeline">
+                <div class="resume__timelines">
+                  <article class="timelines__timeline">
+                    <div class="timeline__header">
+                      <h4 class="timeline__year">2010</h4>
+                      <span class="timeline__company">Madrid University</span>
+                    </div>
+                    <div class="timeline__divider"></div>
+                    <div class="timeline__description">
+                      <h3 class="timeline__title">Web development</h3>
+                      <p class="timelines__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda, consequuntur?
+                      </p>
+                    </div>
+                  </article>
+                  <article class="timelines__timeline">
+                    <div class="timeline__header">
+                      <h4 class="timeline__year">2008</h4>
+                      <span class="timeline__company">High School</span>
+                    </div>
+                    <div class="timeline__divider"></div>
+                    <div class="timeline__description">
+                      <h3 class="timeline__title">Design works</h3>
+                      <p class="timelines__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda, consequuntur?
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="resume__subheader">
+                <h2 class="resume__subtitle">Experience</h2>
+              </div>
+              <div class="resume__timeline">
+                <div class="resume__timelines">
+                  <article class="timelines__timeline">
+                    <div class="timeline__header">
+                      <h4 class="timeline__year">2014-2024</h4>
+                      <span class="timeline__company">Google</span>
+                    </div>
+                    <div class="timeline__divider"></div>
+                    <div class="timeline__description">
+                      <h3 class="timeline__title">Senior Web Developer</h3>
+                      <p class="timelines__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                    </div>
+                  </article>
+                  <article class="timelines__timeline">
+                    <div class="timeline__header">
+                      <h4 class="timeline__year">2010-2014</h4>
+                      <span class="timeline__company">Freelance</span>
+                    </div>
+                    <div class="timeline__divider"></div>
+                    <div class="timeline__description">
+                      <h3 class="timeline__title">Junior Web Developer</h3>
+                      <p class="timelines__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda, consequuntur?
+                      </p>
+                    </div>
+                  </article>
+                  <article class="timelines__timeline">
+                    <div class="timeline__header">
+                      <h4 class="timeline__year">2009-2010</h4>
+                      <span class="timeline__company">Intern</span>
+                    </div>
+                    <div class="timeline__divider"></div>
+                    <div class="timeline__description">
+                      <h3 class="timeline__title">Web Designer</h3>
+                      <p class="timelines__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda, consequuntur?
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+            <section class="resume__right">
+              <div class="resume__subheader">
+                <h2 class="resume__subtitle">Design <span class="resume__subtitle-color">skills</span></h2>
+              </div>
+              <div class="resume__skills">
+                <article class="skills__title">
+                  <h4 class="skills__text">Web Design</h4>
+                  <span class="skills__number">90%</span>
+                </article>
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--90"></div>
+                </div>
+                <article class="skills__title">
+                  <h4 class="skills__text">Mockups</h4>
+                  <span class="skills__number">75%</span>
+                </article>
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--75"></div>
+                </div>
+                <article class="skills__title">
+                  <h4 class="skills__text">Logotypes</h4>
+                  <span class="skills__number">60%</span>
+                </article>
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--60"></div>
+                </div>
+                <article class="skills__title">
+                  <h4 class="skills__text">Banner Design</h4>
+                  <span class="skills__number">80%</span>
+                </article>
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--80"></div>
+                </div>
+              </div>
+
+              <div class="resume__subheader">
+                <h2 class="resume__subtitle">Coding skills</h2>
+              </div>
+              <div class="resume__skills">
+                <article class="skills__title">
+                  <h4 class="skills__text">JavaScript</h4>
+                  <span class="skills__number">90%</span>
+                </article>
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--90"></div>
+                </div>
+                <article class="skills__title">
+                  <h4 class="skills__text">HTML & CSS</h4>
+                  <span class="skills__number">95%</span>
+                </article>
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--95"></div>
+                </div>
+                <article class="skills__title">
+                  <h4 class="skills__text">PHP</h4>
+                  <span class="skills__number">60%</span>
+                </article>
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--60"></div>
+                </div>
+                <article class="skills__title">
+                  <h4 class="skills__text">Java</h4>
+                  <span class="skills__number">40%</span>
+                </article>
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--40"></div>
+                </div>
+                <article class="skills__title">
+                  <h4 class="skills__text">Python</h4>
+                  <span class="skills__number">50%</span>
+                </article>
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--50"></div>
+                </div>
+                <article class="skills__title">
+                  <h4 class="skills__text">Golang</h4>
+                  <span class="skills__number">65%</span>
+                </article>
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--65"></div>
+                </div>
+              </div>
+
+              <div class="resume__subheader">
+                <h2 class="resume__subtitle">Knowledge</h2>
+              </div>
+
+              <div class="resume__knowledges">
+                <ul class="knowledge__list">
+                  <li class="knowlege__option">Programming</li>
+                  <li class="knowlege__option">Web deployment</li>
+                  <li class="knowlege__option">Administration</li>
+                  <li class="knowlege__option">Social networks</li>
+                  <li class="knowlege__option">SEO</li>
+                  <li class="knowlege__option">Graphic design & UX/UI</li>
+                  <li class="knowlege__option">Data analysis</li>
+                  <li class="knowlege__option">Comunication</li>
+                  
+                </ul>
+              </div>
+            </section>
+          </div>
+
+          <div class="resume__certificates">
+            <div class="resume__subheader">
+              <h2 class="resume__subtitle">Certificates</h2>
+            </div>
+            <section class="certificates__container">
+              <article class="certificates__certificate">
+                <div class="certificate__logo">
+                  <img src="img/desktop/certificado-1.png" alt="" class="certificate__image">
+                </div>
+                <div class="certificate__content">
+                  <h4 class="certificate__title">Master in PHP, SQL, POO, MVC, Restful API</h4>
+                  <span class="certificate__id">ID verification : 32523426</span>
+                  <span class="certificate__date">10th of July 2023</span>
+                </div>
+              </article><article class="certificates__certificate">
+                <div class="certificate__logo">
+                  <img src="img/desktop/certificado-1.png" alt="" class="certificate__image">
+                </div>
+                <div class="certificate__content">
+                  <h4 class="certificate__title">Master in Web Administration : Hosting of 100+ websites</h4>
+                  <span class="certificate__id">ID verification : q23r14343</span>
+                  <span class="certificate__date">2nd of May 2022</span>
+                </div>
+              </article>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
