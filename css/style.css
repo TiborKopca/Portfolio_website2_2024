@@ -25,12 +25,11 @@
   --color-text: #555;
 
   --color-semi-transparent-25: rgba(205 205 205 / 25%);
-  --color-semi-transparent-25-dark:rgba(41, 39, 39, 0.25);
-  
+  --color-semi-transparent-25-dark: rgba(41, 39, 39, 0.25);
+
   /* --color-semi-transparent-50: rgba(205 205 205 / 50%); */
   --color-semi-transparent-50: rgba(167, 194, 194, 0.5);
   --color-semi-transparent-75: rgba(167, 194, 194, 0.75);
-  
 
   --color-border-reviews: rgb(232, 235, 235);
   --color-company: rgb(187, 187, 187);
@@ -352,7 +351,8 @@ body {
 /* ABOUT ME PAGE******************************************** */
 .content__about,
 .content__resume,
-.content__portfolio {
+.content__portfolio,
+.content__blog {
   display: block;
   height: 100%;
   min-height: 100%;
@@ -439,7 +439,8 @@ body {
 .clients__header,
 .prices__header,
 .extra__header,
-.resume__subheader {
+.resume__subheader,
+.blog__header {
   display: inline-block;
   padding-right: 1.2rem;
   position: relative;
@@ -450,7 +451,8 @@ body {
 .clients__title,
 .prices__title,
 .extra__title,
-.resume__subtitle {
+.resume__subtitle,
+.blog__title {
   font-size: 2.1rem;
 }
 .services__title::after,
@@ -458,7 +460,8 @@ body {
 .clients__title::after,
 .prices__title::after,
 .extra__title::after,
-.resume__subtitle::after {
+.resume__subtitle::after,
+.blog__title::after {
   content: " ";
   position: absolute;
   height: 20px;
@@ -940,7 +943,6 @@ body {
 }
 .gallery__image {
   transition: all 0.3s ease-in-out;
-
 }
 .gallery__title {
   font-size: 1.6rem;
@@ -997,4 +999,84 @@ body {
   opacity: 1;
 }
 
+/* BLOG ******************************************************* */
+.blog__articles {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  gap: 1.5rem;
+}
+.articles__article {
+  flex-basis: calc(50% - 1.5rem);
+  padding-bottom: 2.5rem;
+}
+.article__top {
+  position: relative;
+  overflow: hidden;
+}
+.article__category {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  height: 3rem;
+  width: auto;
+  text-align: center;
+  line-height: 0rem;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
 
+  transition: all 0.45s ease-in-out;
+  background-color: var(--color-semi-transparent-25-dark);
+  color: var(--color-primary);
+  z-index: 2;
+}
+.article__mask {
+  width: 100%;
+  height: 19rem;
+  overflow: hidden;
+}
+.article__image {
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.article__top:hover .article__image {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.article__logo{
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+.article__icon {
+  font-size: 4rem;
+  position: absolute;
+  top: calc(50% - 2rem);
+  left: calc(50% - 2rem);
+  width: 4rem;
+  text-align: center;
+  color: var(--color-primary);
+}
+.article__top:hover .article__logo {
+  opacity: 1;
+}
+.article__bottom {
+  padding: 2.1rem;
+  padding-top: 1.8rem;
+  margin: 0;
+  border: 0.1rem solid var(--color-border-reviews);
+  border-top: 0;
+}
+.article__date{
+  display: block;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  font-weight: 300;
+  color: var(--color-subtitle);
+
+}
+.article__title{
+  font-size: 1.8rem;;
+}
+
+/* CONTACT ***************************************************** */
