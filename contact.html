@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - About me | Tibor Kopca</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <meta property="og:title" content="Portfolio | Tibor Kopca" />
+    <meta property="og:description" content="A portfolio website" />
+    <meta
+      property="og:image"
+      content="URL de la imagen que quieres mostrar en las redes sociales"
+    />
+    <meta property="og:url" content="URL de tu página" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Título de tu página" />
+    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta
+      name="twitter:image"
+      content="URL de la imagen que quieres mostrar en Twitter"
+    />
+    <meta name="theme-color" content="#fafafa" />
+
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- FAVICONS -->
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="font/fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <!-- FONTS LOADED IN STYLE.CSS-->
+    <!-- <link rel="stylesheet" type="text/css" href="font/poppins/poppins.css"> -->
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/scroll.css" /><link rel="stylesheet" type="text/css" href="css/loader.css" />
+
+    
+    <!-- SCRIPTS -->
+    <script src="/js/map.js" defer></script>
+    <!-- <script src="preloader.js"></script> -->
+    
+  </head>
+
+  <body>
+    <!-- Main layout/Layout principal  -->
+    <div class="layout">
+      <!-- Sidebar/Barra lateral (info user)  -->
+      <aside class="layout__aside">
+        <section class="aside__user-info">
+          <div class="user-info__general">
+            <!-- image mask -->
+            <div class="user-info__container-image">
+              <img
+                src="img/desktop/default-user.jpg"
+                class="user-info__image"
+                alt="Foto of Tibor Kopca"
+              />
+            </div>
+
+            <h2 class="user-info__name">Tibor Kopca</h2>
+            <h3 class="user-info__job">Web Developer | Desarrollador web</h3>
+          </div>
+          <!-- Sidebar menu - outside the layout really -->
+          <nav class="layout__menu">
+            <ul class="menu__list">
+              <li class="menu__option">
+                <a href="index.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-house"></i>
+                  <span class="menu__overlay">Home</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="about.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-user"></i>
+                  <span class="menu__overlay">About me</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="curriculum.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                  <span class="menu__overlay">Curriculum</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="portfolio.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-briefcase"></i>
+                  <span class="menu__overlay">Portfolio</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="blog.html" class="menu__link">
+                  <i class="menu__icon fa-solid fa-book"></i>
+                  <span class="menu__overlay">Blog</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="contact.html" class="menu__link menu__link--active">
+                  <i class="menu__icon fa-solid fa-envelope fa-beat-fade"></i>
+                  <span class="menu__overlay">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- SOCIAL NETWORKS -->
+          <div class="user-info__links">
+            <ul class="links__social">
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-github"></i>
+                </a>
+              </li>
+
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-instagram"></i>
+                </a>
+              </li>
+
+              <li class="social__option">
+                <a href="#" class="social__link">
+                  <i class="social__icon fa-brands fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- CV BUTTON -->
+          <div class="user-info__buttons">
+            <a href="#" class="user-info__btn">Download CV</a>
+          </div>
+
+          <footer class="user-info__footer">TK Development &copy; 2024</footer>
+        </section>
+      </aside>
+
+      <!-- Main content/Contenido principal  -->
+      <main class="layout__content">
+        <section class="content__page content__contact">
+          <header class="contact__header">
+            <h1 class="contact__title">Contact</h1>
+          </header>
+
+          <div class="contact__container">
+            <section class="contact__info">
+              <div class="contact__data">
+                <i class="contact__icon fa-solid fa-location-dot"></i>
+                <h2 class="contact__subtitle">Palma de Mallorca, Spain</h2>
+              </div>
+              <div class="contact__data">
+                <i class="contact__icon fa-solid fa-phone"></i>
+                <h2 class="contact__subtitle">666 333 777</h2>
+              </div>
+              <div class="contact__data">
+                <i class="contact__icon fa-solid fa-location-dot"></i>
+                <h2 class="contact__subtitle">Palma de Mallorca, Spain</h2>
+              </div>
+              <div class="contact__data">
+                <i class="contact__icon fa-solid fa-envelope"></i>
+                <h2 class="contact__subtitle">john.doe@gmail.com</h2>
+              </div>
+              <div class="contact__data">
+                <i class="contact__icon fa-solid fa-circle-check"></i>
+                <h2 class="contact__subtitle">Web Developer Freelance</h2>
+              </div>
+            </section>
+
+            <section class="contact__form-box">
+              <div class="contact__map" id="load-iframe-map">
+                <span class="loader"></span>
+              </div>
+              <header class="contact__form-header">
+                <h3 class="form-header__title">
+                  Dont Hesitate To
+                  <span class="contact__title-color">Contact Me!</span>
+                </h3>
+              </header>
+              <form action="" class="contact__form">
+                <div class="form__container">
+                  <section class="form__left">
+                    <div class="form__group">
+                      <input
+                      type="text"
+                      name="name"
+                      id="input__name"
+                      class="form__input"
+                      required
+                      placeholder="Name"
+                      />
+                      <label for="input__name" class="form__label">Name</label>
+                    </div>
+                    <div class="form__group">
+                      <input
+                      type="email"
+                      name="email"
+                      id="input__email"
+                      class="form__input"
+                      required
+                      placeholder="Email"
+                      />
+                      <label for="input__email" class="form__label">Email</label>
+                      </div>
+                    <div class="form__group">
+                      
+                      <input
+                        type="text"
+                        name="subject"
+                        id="input__subject"
+                        class="form__input"
+                        required
+                        placeholder="Subject"
+                      /><label for="input__subject" class="form__label"
+                      >Subject</label
+                    >
+                    </div>
+                  </section>
+
+                  <section class="form__right">
+                    <div class="form__group form__group--textarea">
+                      <textarea
+                      name="message"
+                      id="input__message"
+                      class="form__input form__input--textarea"
+                      required
+                      placeholder="Message"
+                      ></textarea>
+                      <label for="input__message" class="form__label">Message</label>
+                    </div>
+                  </section>
+                </div>
+                <input type="submit" value="Send Message" class="form__button"></input>
+              </form>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

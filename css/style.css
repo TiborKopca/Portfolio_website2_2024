@@ -38,6 +38,7 @@
   --color-text-shadow: rgba(0, 0, 0, 0.25);
 
   --color-background-certificate: #f5f5f5;
+  --color-background-contact: #fcfcfc;
 }
 /* TEXT SELECTION ************************************** */
 ::selection {
@@ -352,7 +353,8 @@ body {
 .content__about,
 .content__resume,
 .content__portfolio,
-.content__blog {
+.content__blog,
+.content__contact {
   display: block;
   height: 100%;
   min-height: 100%;
@@ -365,19 +367,25 @@ body {
 }
 .about__header,
 .resume__header,
-.portfolio__header {
+.portfolio__header,
+.blog__header,
+.contact__header {
   margin-bottom: 4.5rem;
   display: inline-block;
 }
 .about__title,
 .resume__title,
-.portfolio__title {
+.portfolio__title,
+.blog__title,
+.contact__title {
   font-size: 3.2rem;
   position: relative;
 }
 .about__title::after,
 .resume__title::after,
-.portfolio__title::after {
+.portfolio__title::after,
+.blog__title::after,
+.contact__title::after {
   content: " ";
   position: absolute;
   height: 30px;
@@ -396,7 +404,9 @@ body {
 }
 .about__title-color,
 .services__title-color,
-.resume__subtitle-color {
+.resume__subtitle-color,
+.contact__subtitle-color,
+.contact__title-color {
   color: var(--color-secondary);
 }
 
@@ -439,8 +449,7 @@ body {
 .clients__header,
 .prices__header,
 .extra__header,
-.resume__subheader,
-.blog__header {
+.resume__subheader {
   display: inline-block;
   padding-right: 1.2rem;
   position: relative;
@@ -452,7 +461,7 @@ body {
 .prices__title,
 .extra__title,
 .resume__subtitle,
-.blog__title {
+.form-header__title {
   font-size: 2.1rem;
 }
 .services__title::after,
@@ -461,7 +470,7 @@ body {
 .prices__title::after,
 .extra__title::after,
 .resume__subtitle::after,
-.blog__title::after {
+.form-header__title::after {
   content: " ";
   position: absolute;
   height: 20px;
@@ -1044,7 +1053,7 @@ body {
   transform: scale(1.1);
   z-index: 1;
 }
-.article__logo{
+.article__logo {
   transition: all 0.2s ease-in-out;
   opacity: 0;
 }
@@ -1067,16 +1076,149 @@ body {
   border: 0.1rem solid var(--color-border-reviews);
   border-top: 0;
 }
-.article__date{
+.article__date {
   display: block;
   font-size: 1.2rem;
   line-height: 2.2rem;
   font-weight: 300;
   color: var(--color-subtitle);
-
 }
-.article__title{
-  font-size: 1.8rem;;
+.article__title {
+  font-size: 1.8rem;
 }
 
 /* CONTACT ***************************************************** */
+
+.contact__container {
+  display: flex;
+}
+.contact__info {
+  flex-basis: 33%;
+  padding: 0 1.6rem;
+}
+.contact__data {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--color-background-contact);
+  border: 1px solid var(--color-border-reviews);
+}
+.contact__icon {
+  font-size: 3.3rem;
+  color: var(--color-secondary);
+}
+.contact__subtitle {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.contact__form-box {
+  flex-basis: 66%;
+  padding: 0 1.6rem;
+}
+
+.form__container {
+  display: flex;
+}
+.form__left {
+  flex-basis: 47%;
+  margin-right: 1.5rem;
+}
+.form__group {
+  position: relative;
+  margin: 3rem 0 3rem 0;
+}
+.form__input,
+textarea {
+  position: relative;
+  display: block;
+  border: 0.2rem solid var(--color-border-reviews);
+  width: 100%;
+  height: 4.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 1rem 1.2rem;
+  outline: none;
+  box-shadow: 0 1rem 1rem -8px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  background: 0 0;
+  background-color: var(--color-background-contact);
+  line-height: 2.1rem;
+  /* z-index: 1; */
+}
+
+.form__right {
+  flex-basis: 50%;
+  max-width: 50%;
+  max-height: 100%;
+}
+.form__group--textarea {
+  height: 100%;
+}
+.form__input--textarea {
+  display: block;
+  height: 100%;
+  resize: none;
+}
+
+.form__label {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  /* z-index: -1; */
+  color: var(--color-company);
+  transition: all 300ms ease-in-out;  
+  /* POINTER EVENTS - FOR THE SHOWING THE LABEL BEHIND THE INPUT, TO WORK WITH Z-INDEX */
+  pointer-events: none;
+}
+/* HIDING PLACEHOLDERS */
+.form__input::-webkit-input-placeholder{
+  color: transparent;
+}
+.form__input::-moz-placeholder{
+  color: transparent;
+}
+
+/*FOCUS EFFECTS*/
+.form__input:focus {
+  border: 0.2rem solid var(--color-secondary);
+}
+/* THIS WILL ONLY WORK IF THE LABEL IS BELOW THE INPUT */
+.form__input:focus~label,
+.form__input:not(:placeholder-shown)~label {
+  top: -2rem;
+  left: 0;
+  z-index: 1;
+  font-size: 1.3rem;
+  color: var(--color-secondary);
+}
+.form__button{
+  padding: 1.3rem 3rem;
+  border-radius: 3.2rem;
+  font-size: 1.5rem;
+  border: 0.2rem solid var(--color-secondary);
+  color: var(--color-title);
+  background-color: var(--color-semi-transparent-50);
+
+  box-shadow: 0 1rem 1rem -8px var(--color-shadow); 
+
+  cursor: pointer ;
+  transition: all 0.3s ease-in-out;
+}
+.form__button:hover{
+  background-color: var(--color-semi-transparent-25-dark);
+  color: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+}
+.contact__map{
+  width: 100%;
+  min-height: 15rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+
+}
+.contact__iframe{
+  width: 100%;
+  height: 14rem;
+}
+
