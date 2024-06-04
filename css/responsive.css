@@ -262,7 +262,7 @@
 }
 @media screen and (max-width: 500px) {
   .layout__aside {
-    display: none;
+    /* display: none; */
   }
 }
 @media screen and (max-width: 480px) {
