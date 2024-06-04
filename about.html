@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0"
+    />
     <title>Portfolio - About me | Tibor Kopca</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -37,10 +40,14 @@
     />
     <!-- FONTS LOADED IN STYLE.CSS-->
     <!-- <link rel="stylesheet" type="text/css" href="font/poppins/poppins.css"> -->
+    <!-- NORMALIZE & RESET loaded in style.css -->
     <!-- STYLESHEET -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/scroll.css" />
-    <script></script>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <!-- SCRIPTS -->
+    <script src="js/menu.js" defer></script>
     <!-- <script src="preloader.js"></script> -->
   </head>
 
@@ -63,6 +70,7 @@
             <h2 class="user-info__name">Tibor Kopca</h2>
             <h3 class="user-info__job">Web Developer | Desarrollador web</h3>
           </div>
+
           <!-- Sidebar menu - outside the layout really -->
           <nav class="layout__menu">
             <ul class="menu__list">
@@ -146,6 +154,11 @@
           <footer class="user-info__footer">TK Development &copy; 2024</footer>
         </section>
       </aside>
+      
+      <!-- MENU RESPONSIVE(hamburger) -->
+      <div class="layout__menu-toggle">
+        <i class="menu-toggle__icon fa-solid fa-bars"></i>
+      </div>
 
       <!-- Main content/Contenido principal  -->
       <main class="layout__content">
@@ -220,7 +233,9 @@
               </article>
               <article class="services__service">
                 <div class="service__icon">
-                  <i class="service__icon-aftertitle fa-solid fa-chalkboard-teacher"></i>
+                  <i
+                    class="service__icon-aftertitle fa-solid fa-chalkboard-teacher"
+                  ></i>
                 </div>
                 <div class="service__content">
                   <h3 class="service__title">Teaching</h3>
@@ -281,7 +296,7 @@
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Quos, nostrum saepe! Reprehenderit ex nesciunt soluta
                     dolorem, ratione temporibus quae. Amet, laborum? Possimus
-                    obcaecati vel pariatur soluta in, fugiat ad placeat? 
+                    obcaecati vel pariatur soluta in, fugiat ad placeat?
                   </p>
                 </div>
                 <div class="review__author">
@@ -383,7 +398,6 @@
           <section class="about__prices">
             <div class="prices__header">
               <h2 class="prices__title">Prices</h2>
-
             </div>
             <div class="prices__container">
               <article class="prices__box">
@@ -398,10 +412,12 @@
                   <a href="#" class="prices__btn">Try for free</a>
                 </div>
                 <div class="prices__reward">A web development course</div>
-                <div class="prices__reward">Support to your questions and issues</div>
+                <div class="prices__reward">
+                  Support to your questions and issues
+                </div>
                 <div class="prices__reward">Certificate of completion</div>
-
-              </article> <article class="prices__box">
+              </article>
+              <article class="prices__box">
                 <div class="prices__subtitle">
                   <span class="prices__text">Premium</span>
                 </div>
@@ -415,25 +431,28 @@
                 <div class="prices__reward">5 web development courses</div>
                 <div class="prices__reward">Priority support</div>
                 <div class="prices__reward">Certificate of completion</div>
-
               </article>
             </div>
           </section>
 
           <section class="about__extra">
             <div class="extra__header">
-              <h2 class="header__title">Information <span class="header__title-color">extra</span></h2>
+              <h2 class="header__title">
+                Information <span class="header__title-color">extra</span>
+              </h2>
             </div>
             <div class="extra__container">
               <article class="extra__info">
                 <i class="extra__icon fa-solid fa-heart"></i>
                 <h4 class="extra__subtitle">Satisfied students</h4>
                 <span class="extra__quantity">553</span>
-              </article><article class="extra__info">
+              </article>
+              <article class="extra__info">
                 <i class="extra__icon fa-solid fa-clock"></i>
                 <h4 class="extra__subtitle">Hours of content</h4>
                 <span class="extra__quantity">1204</span>
-              </article><article class="extra__info">
+              </article>
+              <article class="extra__info">
                 <i class="extra__icon fa-solid fa-star"></i>
                 <h4 class="extra__subtitle">Score</h4>
                 <span class="extra__quantity">10</span>

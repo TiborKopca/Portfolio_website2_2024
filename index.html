@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <title>Portfolio | Tibor Kopca</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -35,13 +35,16 @@
       rel="stylesheet"
       href="font/fontawesome-free-6.1.2-web/css/all.min.css"
     />
-    <!-- FONTS LOADED IN STYLE.CSS-->
+    <!-- FONTS loaded in style.css-->
     <!-- <link rel="stylesheet" type="text/css" href="font/poppins/poppins.css"> -->
+    <!-- NORMALIZE & RESET loaded in style.css -->
     <!-- STYLESHEET -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/scroll.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     
-    <script></script>
+    <!-- SCRIPTS -->
+    <script src="js/menu.js" defer></script>
     <!-- <script src="preloader.js"></script> -->
   </head>
 
@@ -150,6 +153,12 @@
         </section>
       </aside>
 
+      <!-- MENU RESPONSIVE(hamburger) -->
+      <div class="layout__menu-toggle">
+        <i class="menu-toggle__icon fa-solid fa-bars"></i>
+        
+
+      </div>
       <!-- Main content/Contenido principal  -->
       <main class="layout__content">
         <section class="content__page">
