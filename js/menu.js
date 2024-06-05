@@ -16,20 +16,34 @@ button.addEventListener("click", (event) => {
   }
 });
 
+//SOLVE IT
+icon.addEventListener("click", (event) => {
+  let visible = aside.classList.contains("layout__aside--active");
+  if (!visible) {
+    aside.classList.add("layout__aside--active");
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-xmark");
+  } else {
+    aside.classList.remove("layout__aside--active");
+    icon.classList.remove("fa-xmark");
+    icon.classList.add("fa-bars");
+  }
+});
+
 //TO CLOSE MENU WHEN CLICKING OUTSIDE OF IT
-// layout.addEventListener("click", (event) => {
-//   if (
-//     aside.classList.contains("layout__aside--active") &&
-//     event.target != aside &&
-//     event.target != button
-//   ) {
-//     aside.classList.remove("layout__aside--active");
-//     icon.classList.remove("fa-xmark");
-//     icon.classList.add("fa-bars");
+layout.addEventListener("click", (event) => {
+  if (
+    aside.classList.contains("layout__aside--active") &&
+    event.target != aside &&
+    event.target != button
+  ) {
+    aside.classList.remove("layout__aside--active");
+    icon.classList.remove("fa-xmark");
+    icon.classList.add("fa-bars");
 
-//   }
+  }
 
-// });
+});
 
 
 //HIDE MENU ON RESIZE SCREEN
