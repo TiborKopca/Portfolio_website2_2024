@@ -48,12 +48,13 @@
     border-radius: 0;
     grid-template-areas: "content";
     grid-template-columns: 100%;
+    overflow: hidden;
   }
 
   .layout__aside {
     display: block;
     position: absolute;
-    max-width: 350px;
+    max-width: 37rem;
     height: auto;
     top: 0;
     right: 0;

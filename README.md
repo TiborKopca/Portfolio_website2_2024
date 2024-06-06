@@ -21,5 +21,9 @@
 
 ### Screenshots
 
+![desktop homepage](img/screenshots/index.png)
+
 ### Links - live pages online
 -[The project site](https://tiborkopca.github.io/Portfolio_website2_2024/)
+
+

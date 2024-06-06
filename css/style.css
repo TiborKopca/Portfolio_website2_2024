@@ -268,7 +268,7 @@ body {
   display: block;
   position: absolute;
   top: 0;
-  right: -105px;
+  right: -10.5rem;
   min-width: 11rem;
   background-color: var(--color-transparent);
 }
@@ -389,10 +389,10 @@ body {
 .contact__title::after {
   content: " ";
   position: absolute;
-  height: 30px;
-  width: 50px;
-  top: 20px;
-  right: -25px;
+  height: 1.875rem;
+  width: 3rem;
+  top: 1.25rem;
+  right: -1.5rem;
   background-image: -webkit-repeating-radial-gradient(
     center center,
     var(--color-secondary),
@@ -589,7 +589,7 @@ body {
   opacity: 1;
 }
 .clients__img {
-  width: 125px;
+  width: 10rem;
   padding: 1.5rem 0;
   /* margin-bottom: 1.5rem; */
 }
@@ -825,7 +825,7 @@ body {
   position: absolute;
   height: auto;
   top: 0;
-  bottom: -20px;
+  bottom: -1.25rem;
   left: 30%;
 }
 .timeline__divider::before {
