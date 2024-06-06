@@ -70,11 +70,13 @@
     /* HIDDEN START POSITION */
     margin-right: -100%;
     opacity: 0;
+  
   }
   .layout__aside--active {
     width: 100%;
     margin-right: 0;
     opacity: 1;
+
   }
   .layout__aside--hidden {
   }
@@ -166,6 +168,7 @@
   }
   .menu-toggle__icon {
     transition: all 0.3s ease-in-out;
+    pointer-events: none;
   }
   .fa-xmark {
     /* provisional */
